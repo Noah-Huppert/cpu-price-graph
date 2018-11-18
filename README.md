@@ -12,6 +12,8 @@ Simple analysis of CPU price vs performance.
 # Overview
 Analysis of data set from [cpubenchmark.net]('https://www.cpubenchmark.net/high_end_cpus.html').
 
+![Graph](./graph.png)
+
 2 scripts are provided:
 
 - [`scrape.py`](./scrape.py): Scrapes the website and saves CPU data in `specs.json`
