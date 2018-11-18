@@ -46,7 +46,7 @@ for i, bin_i in enumerate(price_bin_indexes):
 binned_avrg_ratings = []
 for i, summed_ratings in enumerate(binned_summed_ratings):
     if binned_summed_ratings_count[i] == 0:
-        binned_avrg_ratings.append(0)
+        binned_avrg_ratings.append(None)
     else:
         binned_avrg_ratings.append(summed_ratings / binned_summed_ratings_count[i])
 
@@ -58,8 +58,13 @@ fig, ax = plt.subplots()
 ax.set_xlabel("Price")
 ax.set_ylabel("Rating")
 
-ax.scatter(binned_prices, binned_ratings, label='Binned Price vs Rating', color='blue')
-ax.plot(price_bins, binned_avrg_ratings, label='Average Binned Price vs Rating', color='red')
+ax.scatter(binned_prices, binned_ratings,
+           label='Binned Price vs Rating',
+           color='blue')
+
+ax.plot(price_bins, binned_avrg_ratings,
+        label='Average Binned Price vs Rating',
+        color='red')
 
 fig.legend()
 plt.show()
