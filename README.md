@@ -12,7 +12,7 @@ Simple analysis of CPU price vs performance.
 # Overview
 Analysis of data set from [cpubenchmark.net]('https://www.cpubenchmark.net/high_end_cpus.html').
 
-![Graph](./graph.png)
+![Graph](./out-graph.png)
 
 2 scripts are provided:
 
